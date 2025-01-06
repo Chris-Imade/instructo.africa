@@ -105,12 +105,6 @@
               Together, we’re shaping the future of Africa’s classrooms.
             </p>
 
-            <div class="social-icon d-flex align-items-center">
-              <a href="index-3.html#"><i class="fab fa-facebook-f"></i></a>
-              <a href="index-3.html#"><i class="fab fa-twitter"></i></a>
-              <a href="index-3.html#"><i class="fab fa-youtube"></i></a>
-              <a href="index-3.html#"><i class="fab fa-linkedin-in"></i></a>
-            </div>
             <div class="mobile-menu fix mb-3"></div>
             <div class="offcanvas__contact">
               <h3>Information</h3>
@@ -120,9 +114,11 @@
                   52 uwamarogie street off airport road Benin city
                 </li>
                 <li>
-                  <span> Call Us: </span>
-                  <a href="tel:+15752056122">+1 (575) 205-6122</a>
-                  <a href="tel:+2349033162469">+234 903 316 2469</a>
+                  <span> Call Us: </span><br />
+                  <div>
+                    <div><a href="tel:+15752056122">+1 (575) 205-6122</a></div>
+                    <a href="tel:+2349033162469">+234 903 316 2469</a>
+                  </div>
                 </li>
                 <li>
                   <span> Email: </span>
@@ -180,41 +176,32 @@
                         <li class="active d-xl-none">
                           <a href="index.html" class="border-none"> Home </a>
                         </li>
-                        <li>
-                          <a href="courses-list.html">
+                        <li class="disabled">
+                          <a href="javascript:void(0);" title="Coming Soon">
                             <span class="head-icon"
                               ><i class="fas fa-book"></i
                             ></span>
                             Courses
                           </a>
                         </li>
-                        <!-- <li>
-                          <a href="event.html">
-                            <span class="head-icon"
-                              ><i class="fas fa-gift"></i
-                            ></span>
-                            events
-                          </a>
-                        </li> -->
                         <li>
                           <a href="instructor.html">
-                            <span class="head-icon">
-                              <i class="fas fa-users"></i>
-                            </span>
+                            <span class="head-icon"
+                              ><i class="fas fa-users"></i
+                            ></span>
                             Team
                           </a>
                         </li>
-
-                        <li class="">
-                          <a href="pricing.html">
+                        <li class="disabled">
+                          <a href="javascript:void(0);" title="Coming Soon">
                             <span class="head-icon"
                               ><i class="fas fa-file-alt"></i
                             ></span>
                             Pricing
                           </a>
                         </li>
-                        <li>
-                          <a href="news.html">
+                        <li class="disabled">
+                          <a href="javascript:void(0);" title="Coming Soon">
                             <span class="head-icon"
                               ><i class="fas fa-layer-group"></i
                             ></span>
@@ -256,6 +243,17 @@
         </div>
       </div>
     </header>
+
+    <style>
+      .disabled {
+        pointer-events: none;
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+      .disabled a {
+        color: #aaa; /* Optional: change the text color to indicate it's disabled */
+      }
+    </style>
 
     <!-- Search Section Start -->
     <div class="header-search-bar d-flex align-items-center">
