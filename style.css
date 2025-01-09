@@ -35,7 +35,133 @@ Version: 1.1.0
 Main Style file-> assets/css/main.css 
 */
 
+.mission-vision-section {
+  padding: 100px 0;
+  background: #f8f9fa;
+}
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 
+.section-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
 
+.card {
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
 
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-header {
+  margin-bottom: 25px;
+}
+
+.card-title {
+  color: #2b044d;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.divider {
+  width: 80px;
+  height: 4px;
+  background: #ff1949;
+  border-radius: 2px;
+}
+
+.card-content {
+  color: #677294;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  background: #eef2f6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-circle svg {
+  width: 24px;
+  height: 24px;
+  color: #2b044d;
+}
+
+.card-tag {
+  color: #2b044d;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* Animation classes */
+.wow {
+  visibility: hidden;
+}
+
+.fadeInUp {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+  .section-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .mission-vision-section {
+    padding: 60px 0;
+  }
+
+  .card {
+    padding: 30px;
+  }
+
+  .card-title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-title {
+    font-size: 24px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+}
